@@ -5,11 +5,12 @@
     android:layout_width="300dp"
     android:layout_height="wrap_content">
 
-    <!-- 타이틀바 -->
+    <!--타이틀바 레이아웃-->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <!--타이틀-->
         <TextView
             android:id="@+id/title"
             android:text="Title"
@@ -22,23 +23,25 @@
     </LinearLayout>
     <!-- //end 타이틀바 -->
 
-    <!-- Notice -->
+    <!--내부 내용 레이아웃-->
     <LinearLayout
         android:padding="12dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <!-- 체크리스트 앞, 뒤 확인, [ 제거-->
+        <!--***체크리스트 앞, 뒤 확인, [ 제거. 안보임***-->
         <TextView
-            android:id="@+id/check"
+            android:id="@+id/check" <!--check 관련 레이아웃, 액티비티-->
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
             android:visibility="invisible"/>
+        <!--뭔지모름-->
         <TextView
             android:id="@+id/check0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="invisible"/>
+        <!--체크박스 레이아웃-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -59,6 +62,7 @@
                 android:textColor="#ff7a00"
                 android:text="공부"/>
         </LinearLayout>
+        
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -79,6 +83,7 @@
                 android:textColor="#ff7a00"
                 android:text="기타"/>
         </LinearLayout>
+        
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -99,6 +104,7 @@
                 android:textColor="#ff7a00"
                 android:text="기타"/>
         </LinearLayout>
+        <!--메모-->
         <EditText
             android:id="@+id/txtText"
             android:textSize="15sp"
@@ -109,21 +115,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Memo"/>
-
     </LinearLayout>
-    <!-- Notice -->
-
+    <!--?-->
     <View
         android:background="#66bdbdbd"
         android:layout_width="match_parent"
         android:layout_height="1dp" />
 
-    <!-- 닫기 버튼 -->
+    <!--닫기 버튼 레이아웃-->
     <LinearLayout
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <!--닫기 버튼. 마찬가지로 onClick 액티비티. 데이터 전송-->
         <Button
             android:id="@+id/close"
             android:text="확인"
@@ -136,5 +141,5 @@
             android:layout_height="53dp"
             android:onClick="mOnClose"/>
     </LinearLayout>
-    <!--// 닫기 버튼 -->
+    
 </LinearLayout>
