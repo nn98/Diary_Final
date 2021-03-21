@@ -3,6 +3,7 @@ package com.example.jkllh.diary_final;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -60,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
     }
     //날짜를 선택할 시 데이터가 있는지를 확인.
     private void checkedDay(int year, int monthOfYear, int dayOfMonth) {
+
+        Log.d("PATH",getApplicationContext().toString());
 
         // 선택한 날짜로 텍스트 세팅.
         sel.setText(year + " - " + monthOfYear + " - " + dayOfMonth);
