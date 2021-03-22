@@ -1,5 +1,6 @@
 package com.example.jkllh.diary_final;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -149,7 +150,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     //제일 빢세지만 제일 중요
-    private void saveDiary(String readDay,String readDay0) {
+    @SuppressLint("WrongConstant")
+    private void saveDiary(String readDay, String readDay0) {
         //일기내용, 체크리스트 저장할 객체 각각 정의
         FileOutputStream fos = null;
         FileOutputStream fos0 = null;
